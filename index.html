@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="hello">
+    <!-- link the font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,800;1,300&display=swap"
+        rel="stylesheet">
+    <!-- link css files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <title>Resturant</title>
+</head>
+
+<body>
+    <button class="scroll-top position-fixed rounded-circle d-flex align-items-center justify-content-center"
+        id="scroll">
+        <i class="fa-solid fa-arrow-up scroll-icon"></i>
+    </button>
+    <!-- start header -->
+    <header class="position-fixed w-100" id="header">
+        <div class="container d-flex justify-content-between py-3 text-white">
+            <div class="info d-flex w-100 justify-content-between">
+                <div class="mobile me-md-5">
+                    <i class="fa-solid fa-mobile-screen-button me-2 head"></i>
+                    <a href="tel:+1 5589 55488 55" class="phone text-white text-decoration-none">+1 5589
+                        55488 55</a>
+                </div>
+                <div class="work-hours">
+                    <i class="fa-solid fa-clock me-2 head"></i>
+                    <span>Mon-Sat: 11AM - 23PM</span>
+                </div>
+            </div>
+            <div class="langs d-none d-md-block">
+                <span class="Eng active">En</span>
+                <span class="Eng mx-1">/</span>
+                <span class="Eng">De</span>
+            </div>
+        </div>
+    </header>
+    <!--end <header> -->
+    <!-- start nav -->
+    <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100">
+        <div class="container">
+            <a class="text-white text-decoration-none fs-2" href="#">RESTAURANTLY</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-none d-lg-flex mb-2 mb-lg-0 ms-5 mx-lg-5 flex-grow-1 justify-content-evenly">
+                    <li class="nav-item p-1">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item py-1">
+                        <a class="nav-link" href="#about-us">About</a>
+                    </li>
+                    <li class="nav-item py-1">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item py-1">
+                        <a class="nav-link" href="#specials">Specials</a>
+                    </li>
+                    <li class="nav-item py-1">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item py-1">
+                        <a class="nav-link" href="#team">Chefs</a>
+                    </li>
+                    <li class="nav-item py-1">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item py-1 dropdown main-nested-li">
+                        <a class="nav-link dropdown-toggle" href="#"> Drop Down</a>
+                        <ul class="main-drop position-absolute px-3 py-2 top-100">
+                            <li><a class="dropdown-item text-black-50 py-1" href="#">Drop 1</a></li>
+                            <li><a class="dropdown-item text-black-50 py-1" href="#">Drop 2</a></li>
+                            <li class="nav-item dropdown nested-li py-1">
+                                <a class="dropdown-item text-black-50" href="#">Drop 3</a>
+                                <ul class="nested position-absolute top-0 py-1 px-2 opacity-0 w-100">
+                                    <li class="w-100 py-1"><a class="dropdown-item text-black-50" href="#">Drop 1</a>
+                                    </li>
+                                    <li class="w-100 py-1"><a class="dropdown-item text-black-50" href="#">Drop 2</a>
+                                    </li>
+                                    <li class="w-100 py-1"><a class="dropdown-item text-black-50" href="#">Drop 3</a>
+                                    </li>
+                                    <li class="w-100 py-1"><a class="dropdown-item text-black-50" href="#">Drop 4</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item text-black-50 py-1" href="#">Drop 4</a></li>
+                            <li><a class="dropdown-item text-black-50 py-1" href="#">Drop 5</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item py-1">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-none d-xl-block">
+                <button class=" main-btn text-uppercase rounded-pill py-2 px-2 px-lg-0 text-white"><a href="#booking"
+                        class="position-relative buttonValue text-decoration-none text-white">Reservation</a></button>
+            </form>
+            <i role="button" class="fa-solid fa-bars bars-icon d-lg-none fs-1 text-white" id="bars"></i>
+        </div>
+    </nav>
+    <!-- end nav -->
+    <!-- start landing -->
+    <section class="landing position-relative vh-100 over-lay" id="landing">
+        <div class="container position-relative top-50 translate-middle-y">
+            <div
+                class="content d-flex flex-column flex-lg-row justify-content-between align-items-center text-center text-lg-start gap-5 gap-lg-0">
+                <div class="text">
+                    <h1 class="fw-bold text-white">Welcome to <span class="main-color">Restaurantly</span></h1>
+                    <p class="text-white fw-bold my-3 fs-6">Delivering great food for more than 18 years!</p>
+                    <div class="buttons">
+                        <button class=" main-btn text-uppercase rounded-pill py-2 px-2 px-lg-0 text-white"><a
+                                href="#menu"
+                                class="position-relative buttonValue text-decoration-none text-white">menu</a></button>
+                        <button class=" main-btn text-uppercase rounded-pill py-2 px-2 px-lg-0 text-white"><a
+                                href="#booking"
+                                class="position-relative buttonValue text-decoration-none text-white">book a
+                                table</a></button>
+                    </div>
+                </div>
+                <div
+                    class="video-icon rounded-circle d-flex justify-content-center align-items-center position-relative">
+                    <i class="fa-solid fa-play play-video fs-4 text-white position-relative"></i>
+                </div>
+            </div>
+        </div>
+        <a href="#about-us" class="scroll-down border border-2 position-absolute translate-middle-x">
+            <span class="ball position-absolute translate-middle-x rounded-circle bg-white"></span>
+        </a>
+    </section>
+    <!-- end landing--->
+    <!-- start about-us -->
+    <section class="about-us position-relative py-5 over-lay" id="about-us">
+        <div class="container position-relative py-3">
+            <div class="main-head">
+                <span class="small fs-6 text-white-50 position-relative text-uppercase">About us</span>
+                <h1 class="big text-capitalize my-2 fs-3 fw-bold">Breif about us</h1>
+            </div>
+            <div class="row my-2 align-items-center gap-3 gap-lg-0">
+                <div class=" text col-lg-6 text-white lh-lg">
+                    <p class="one">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt
+                        ut labore et dolore magna
+                        aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas. accumsan lacus
+                        vel
+                        facilisis.</p>
+                    <p class="two">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididuntut labore et dolore magna aliqua.</p>
+                    <p class="three">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt
+                        ut labore et dolore magna
+                        aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas. accumsan lacus
+                        vel
+                        facilisis.</p>
+                </div>
+                <div
+                    class="img col-lg-6 h-100 position-relative over-lay border border-4 border-dark p-0 overflow-hidden">
+                    <img src="/img/about.jpg" alt="img" class="img-fluid h-100 w-100">
+                    <div class="bottom-right position-absolute d-none d-lg-block"></div>
+                    <div class="top-left position-absolute d-none d-lg-block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about-us -->
+    <!-- start why-chose us -->
+    <section class="why-choose py-5" id="why-us">
+        <div class="container">
+            <div class="main-head">
+                <span class="small fs-6 text-white-50 position-relative text-uppercase">Why us</span>
+                <h1 class="big text-capitalize my-2 fs-3 fw-bold">why choose our Restaurant</h1>
+            </div>
+            <div class="holder py-5 text-center text-md-start">
+                <div class="box p-4">
+                    <div class="content">
+                        <h2 class="head fw-bold fs-3">01</h2>
+                        <h2 class="title fw-bold fs-3 text-white-50 my-3">Lorem Ipsum</h2>
+                        <p class="lh-lg text-white-50">Ulamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Et
+                            consectetur ducimus vero placeat</p>
+                    </div>
+                </div>
+                <div class="box p-4">
+                    <div class="content">
+                        <h2 class="head fw-bold fs-3">02</h2>
+                        <h2 class="title fw-bold fs-3 text-white-50 my-3">Lorem Ipsum</h2>
+                        <p class="lh-lg text-white-50">Ulamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Et
+                            consectetur ducimus vero placeat</p>
+                    </div>
+                </div>
+                <div class="box p-4">
+                    <div class="content">
+                        <h2 class="head fw-bold fs-3">03</h2>
+                        <h2 class="title fw-bold fs-3 text-white-50 my-3">Lorem Ipsum</h2>
+                        <p class="lh-lg text-white-50">Ulamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Et
+                            consectetur ducimus vero placeat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end why-chose us -->
+    <!-- start our-Menu -->
+    <section class="menu py-5" id="menu">
+        <div class="container py-3">
+            <div class="main-head">
+                <span class="small fs-6 text-white-50 position-relative text-uppercase">menu</span>
+                <h1 class="big text-capitalize my-2 fs-3 fw-bold">check our tasty menu</h1>
+            </div>
+            <div class="list my-5">
+                <ul class="d-flex justify-content-center p-0" id="menu-nav">
+                    <li data-type="all" role="button" class="mx-2 mx-lg-3 text-white fw-bold active">All</li>
+                    <li data-type="starters" role="button" class="mx-2 mx-lg-3 text-white fw-bold">Starters</li>
+                    <li data-type="salads" role="button" class="mx-2 mx-lg-3 text-white fw-bold">Salads</li>
+                    <li data-type="special" role="button" class="mx-2 mx-lg-3 text-white fw-bold">Specialty</li>
+                </ul>
+            </div>
+            <div class="row holder position-relative" id="menu-holder">
+                <div class="item  starters col-xl-6 d-flex align-items-center overflow-hidden px-0 mb-4 mb-xl-0">
+                    <div class="item-img border border-4 border-dark rounded-circle overflow-hidden">
+                        <img src="img/menu/lobster-bisque.jpg" alt="Plate" class="img-fluid">
+                    </div>
+                    <div class="data ms-3">
+                        <div class="info d-flex justify-content-between align-items-center position-relative">
+                            <h2><a href="#" class="text-white text-decoration-none plate-name">Lobster
+                                    Bisque</a></h2>
+                            <span class="price ms-1 fw-bold">$5.95</span>
+                        </div>
+                        <div class="madeof">
+                            <p class="text-white-50">Lorem, deren, trataro, filede, nerada</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item  special col-xl-6 d-flex align-items-center overflow-hidden px-0 mb-4 mb-xl-0">
+                    <div class="item-img border border-4 border-dark rounded-circle overflow-hidden">
+                        <img src="img/menu/bread-barrel.jpg" alt="Plate" class="img-fluid">
+                    </div>
+                    <div class="data ms-3">
+                        <div class="info d-flex justify-content-between align-items-center position-relative">
+                            <h2><a href="#" class="text-white text-decoration-none plate-name">Bread
+                                    Barrel</a></h2>
+                            <span class="price ms-1 fw-bold">$6.95</span>
+                        </div>
+                        <div class="madeof">
+                            <p class="text-white-50">Lorem, deren, trataro, filede, nerada</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item  starters col-xl-6 d-flex align-items-center overflow-hidden px-0 mb-4 mb-xl-0">
+                    <div class="item-img border border-4 border-dark rounded-circle overflow-hidden">
+                        <img src="img/menu/cake.jpg" alt="Plate" class="img-fluid">
+                    </div>
+                    <div class="data ms-3">
+                        <div class="info d-flex justify-content-between align-items-center position-relative">
+                            <h2><a href="#" class="text-white text-decoration-none plate-name">Crab
+                                    Cake</a>
+                            </h2>
+                            <span class="price ms-1 fw-bold">$7.95</span>
+                        </div>
+                        <div class="madeof">
+                            <p class="text-white-50">A delicate crab cake served on a toasted roll with lettuce and
+                                tartar
+                                sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item  salads col-xl-6 d-flex align-items-center overflow-hidden px-0 mb-4 mb-xl-0">
+                    <div class="item-img border border-4 border-dark rounded-circle overflow-hidden">
+                        <img src="img/menu/caesar.jpg" alt="Plate" class="img-fluid">
+                    </div>
+                    <div class="data ms-3">
+                        <div class="info d-flex justify-content-between align-items-center position-relative">
+                            <h2><a href="#" class="text-white text-decoration-none plate-name">Caesar
+                                    Selections</a>
+                            </h2>
+                            <span class="price ms-1 fw-bold">$7.95</span>
+                        </div>
+                        <div class="madeof">
+                            <p class="text-white-50">A delicate crab cake served on a toasted roll with lettuce and
+                                tartar
+                                sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item  special col-xl-6 d-flex align-items-center overflow-hidden px-0 mb-4 mb-xl-0">
+                    <div class="item-img border border-4 border-dark rounded-circle overflow-hidden">
+                        <img src="img/menu/tuscan-grilled.jpg" alt="Plate" class="img-fluid">
+                    </div>
+                    <div class="data ms-3">
+                        <div class="info d-flex justify-content-between align-items-center position-relative">
+                            <h2><a href="#" class="text-white text-decoration-none plate-name">Tuscan Grilled</a>
+                            </h2>
+                            <span class="price ms-1 fw-bold">$9.95</span>
+                        </div>
+                        <div class="madeof">
+                            <p class="text-white-50">Grilled chicken with provolone, artichoke hearts, and roasted red
+                                pesto
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item  starters col-xl-6 d-flex align-items-center overflow-hidden px-0 mb-4 mb-xl-0">
+                    <div class="item-img border border-4 border-dark rounded-circle overflow-hidden">
+                        <img src="img/menu/mozzarella.jpg" alt="Plate" class="img-fluid">
+                    </div>
+                    <div class="data ms-3">
+                        <div class="info d-flex justify-content-between align-items-center position-relative">
+                            <h2><a href="#" class="text-white text-decoration-none plate-name">Mozzarella Stick</a>
+                            </h2>
+                            <span class="price ms-1 fw-bold">$4.95</span>
+                        </div>
+                        <div class="madeof">
+                            <p class="text-white-50">Lorem, deren, trataro, filede, nerada
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item  salads col-xl-6 d-flex align-items-center overflow-hidden px-0 mb-4 mb-xl-0">
+                    <div class="item-img border border-4 border-dark rounded-circle overflow-hidden">
+                        <img src="img/menu/greek-salad.jpg" alt="Plate" class="img-fluid">
+                    </div>
+                    <div class="data ms-3">
+                        <div class="info d-flex justify-content-between align-items-center position-relative">
+                            <h2><a href="#" class="text-white text-decoration-none plate-name">Greek Salad</a>
+                            </h2>
+                            <span class="price ms-1 fw-bold">$11.45</span>
+                        </div>
+                        <div class="madeof">
+                            <p class="text-white-50">Fresh spinach, crisp romaine, tomatoes, and Greek olives</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item  salads col-xl-6 d-flex align-items-center overflow-hidden px-0 mb-4 mb-xl-0">
+                    <div class="item-img border border-4 border-dark rounded-circle overflow-hidden">
+                        <img src="img/menu/spinach-salad.jpg" alt="Plate" class="img-fluid">
+                    </div>
+                    <div class="data ms-3">
+                        <div class="info d-flex justify-content-between align-items-center position-relative">
+                            <h2><a href="#" class="text-white text-decoration-none plate-name">Spinach Salad</a>
+                            </h2>
+                            <span class="price ms-1 fw-bold">$7.25</span>
+                        </div>
+                        <div class="madeof">
+                            <p class="text-white-50">Fresh spinach with mushrooms, hard boiled egg, and warm bacon
+                                vinaigrette</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item  special col-xl-6 d-flex align-items-center overflow-hidden px-0">
+                    <div class=" item-img border border-4 border-dark rounded-circle overflow-hidden">
+                        <img src="img/menu/lobster-roll.jpg" alt="Plate" class="img-fluid">
+                    </div>
+                    <div class="data ms-3">
+                        <div class="info d-flex justify-content-between align-items-center position-relative">
+                            <h2><a href="#" class="text-white text-decoration-none plate-name">Lobster Roll</a>
+                            </h2>
+                            <span class="price ms-1 fw-bold">$12.25</span>
+                        </div>
+                        <div class="madeof">
+                            <p class="text-white-50">Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end our-Menu -->
+    <!-- start specials -->
+    <section class="specials py-5" id="specials">
+        <div class="container py-5">
+            <div class="main-head">
+                <span class="small fs-6 text-white-50 position-relative text-uppercase">Specials</span>
+                <h1 class="big text-capitalize my-2 fs-3 fw-bold">Check Our Specials</h1>
+            </div>
+            <div class="row py-4 gap-4 gap-lg-0">
+                <article class="list col-lg-3">
+                    <ul class="style-none p-0 text-center text-lg-start" id="special-list">
+                        <li role="button" class="active text-white mb-1 py-2 px-3">Modi sit est</li>
+                        <li role="button" class="text-white mb-1 py-2 px-3">Unde praesentium sed</li>
+                        <li role="button" class="text-white mb-1 py-2 px-3">Pariatur explicabo vel</li>
+                        <li role="button" class="text-white mb-1 py-2 px-3">Nostrum qui quasi</li>
+                        <li role="button" class="text-white mb-1 py-2 px-3">Iusto ut expedita aut</li>
+                    </ul>
+                </article>
+                <artticle class="special-plate col-lg-9 position-relative">
+                    <div class="plate active d-flex flex-column flex-lg-row position-absolute gap-3 gap-lg-0">
+                        <div class="content flex-grow-1 me-2 order-2 order-xl-1 text-center text-lg-start">
+                            <h2 class="text-white fs-4">Architecto ut aperiam autem id </h2>
+                            <p class="one text-white-50 my-3">Qui laudantium consequatur laborum sit qui adsapiente
+                                dila parde sonata raqer a videna mareta paulona marka
+                            </p>
+                            <p class="two text-white-50">Et nobis maiores eius. Voluptatibus ut enim blanditiis
+                                atque
+                                harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic
+                                ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur
+                                dolorem quaerat quos qui
+                                similique accusamus nostrum rem vero
+                            </p>
+                        </div>
+                        <div class="img order-1 order-lg-2 w-75 mx-auto mx-lg-0 w-lg-auto">
+                            <img src="img/specials-1.png" alt="Special plate" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="plate d-flex flex-column flex-lg-row  position-absolute gap-3 gap-lg-0">
+                        <div class="content flex-grow-1 me-2 order-2 order-xl-1 text-center text-lg-start">
+                            <h2 class="text-white fs-4">Et blanditiis nemo veritatis excepturi</h2>
+                            <p class="one text-white-50 my-3">Qui laudantium consequatur laborum sit qui ad
+                                sapiente
+                                dila parde sonata raqer a videna mareta paulona marka
+                            </p>
+                            <p class="two text-white-50">Et nobis maiores eius. Voluptatibus ut enim blanditiis
+                                atque
+                                harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic
+                                ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur
+                                dolorem quaerat quos qui
+                                similique accusamus nostrum rem vero
+                            </p>
+                        </div>
+                        <div class="img order-1 order-lg-2 w-75 mx-auto mx-lg-0 w-lg-auto">
+                            <img src="img/specials-2.png" alt="Special plate" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="plate d-flex flex-column flex-lg-row position-absolute gap-3 gap-lg-0">
+                        <div class="content order-2 order-xl-1 flex-grow-1 me-2 text-center text-lg-start">
+                            <h2 class="text-white fs-4">Impedit facilis occaecati odio neque aperiam sit</h2>
+                            <p class="one text-white-50 my-3">Qui laudantium consequatur laborum sit qui ad
+                                sapiente
+                                dila parde sonata raqer a videna mareta paulona marka
+                            </p>
+                            <p class="two text-white-50">Et nobis maiores eius. Voluptatibus ut enim blanditiis
+                                atque
+                                harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic
+                                ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur
+                                dolorem quaerat quos qui
+                                similique accusamus nostrum rem vero
+                            </p>
+                        </div>
+                        <div class="img order-1 order-lg-2 w-75 mx-auto mx-lg-0 w-lg-auto">
+                            <img src="img/specials-3.png" alt="Special plate" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="plate d-flex flex-column flex-lg-row position-absolute gap-3 gap-lg-0">
+                        <div class="content order-2 order-xl-1 flex-grow-1 me-2 text-center text-lg-start">
+                            <h2 class="text-white fs-4">Est eveniet ipsam sindera pad rone matrelat sando reda</h2>
+                            <p class="one text-white-50 my-3">Qui laudantium consequatur laborum sit qui ad
+                                sapiente
+                                dila parde sonata raqer a videna mareta paulona marka
+                            </p>
+                            <p class="two text-white-50">Eaque consequuntur consequuntur libero expedita in voluptas.
+                                Nostrum ipsam necessitatibus aliquam fugiat debitis quis
+                                velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui
+                                veritatis aperiam quia a laborum
+                                inventore
+                            </p>
+                        </div>
+                        <div class="img order-1 order-lg-2 w-75 mx-auto mx-lg-0 w-lg-auto">
+                            <img src="img/specials-4.png" alt="Special plate" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="plate d-flex flex-column flex-lg-row position-absolute gap-3 gap-lg-0">
+                        <div class="content order-2 order-xl-1 flex-grow-1 me-2 text-center text-lg-start">
+                            <h2 class="text-white fs-4">Est eveniet ipsam sindera pad rone matrelat sando reda</h2>
+                            <p class="one text-white-50 my-3">Qui laudantium consequatur laborum sit qui ad
+                                sapiente
+                                dila parde sonata raqer a videna mareta paulona marka
+                            </p>
+                            <p class="two text-white-50">Et nobis maiores eius. Voluptatibus ut enim blanditiis
+                                Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non
+                                quam ut quod eius qui. Ipsum quia
+                                odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate
+                                vel
+                            </p>
+                        </div>
+                        <div class="img order-1 order-lg-2 w-75 mx-auto mx-lg-0 w-lg-auto">
+                            <img src="img/specials-5.png" alt="Special plate" class="img-fluid">
+                        </div>
+                    </div>
+                </artticle>
+            </div>
+        </div>
+    </section>
+    <!-- end specials -->
+    <!-- start events -->
+    <section class="events py-5 position-relative over-lay" id="events">
+        <div class="container py-3 position-relative">
+            <div class="main-head">
+                <span class="small fs-6 text-white-50 position-relative text-uppercase">events</span>
+                <h1 class="big text-capitalize my-2 fs-3 fw-bold">Organize Your Events in our Restaurant</h1>
+            </div>
+            <article class="main overflow-hidden py-5" id="main-holder">
+                <div class="events-holder d-flex" id="slider">
+                    <div class="event d-flex flex-column flex-xl-row gap-4 gap-xl-0">
+                        <div class="img w-lg-50">
+                            <img src="img/event-birthday.jpg" alt="Birthday" class="img-fluid">
+                        </div>
+                        <div class="data w-lg-50 ps-4 text-white">
+                            <div class="event-head">
+                                <h3 class="event-type fs-2">Birthday Parties</h3>
+                                <span class="price position-relative text-white fs-5 fw-bold">$290</span>
+                            </div>
+                            <p class="mt-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Illum
+                                quisquam
+                                suscipit unde ad
+                                ratione sequi, saepe culpa nesciunt doloremque vitae?</p>
+                            <ul class="features style-none my-4">
+                                <li class="pb-2 position-relative">Sed ut perspiciatis unde omnis iste natus error sit
+                                    voluptatem
+                                    accusantium</li>
+                                <li class="pb-2 position-relative">doloremque laudantium totam aperiam. Eaque ipsa quae
+                                    ab illo inventore
+                                </li>
+                                <li class="pb-2 position-relative">veritatis et quasi architecto beatae vitae dicta
+                                    sunt. Ut enim ad
+                                    minima</li>
+                            </ul>
+                            <p class="my-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Illum
+                                quisquam
+                                suscipit unde ad
+                                ratione sequi, saepe culpa nesciunt doloremque vitae?</p>
+                        </div>
+                    </div>
+                    <div class="event d-flex flex-column flex-xl-row gap-4 gap-xl-0">
+                        <div class="img w-lg-50">
+                            <img src="img/event-private.jpg" alt="Birthday" class="img-fluid">
+                        </div>
+                        <div class="data w-lg-50 ps-4 text-white">
+                            <div class="event-head">
+                                <h3 class="event-type fs-2">Private Parties</h3>
+                                <span class="price position-relative text-white fs-5 fw-bold">$275</span>
+                            </div>
+                            <p class="mt-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Illum
+                                quisquam
+                                suscipit unde ad
+                                ratione sequi, saepe culpa nesciunt doloremque vitae?</p>
+                            <ul class="features style-none my-4">
+                                <li class="pb-2 position-relative">Sed ut perspiciatis unde omnis iste natus error sit
+                                    voluptatem
+                                    accusantium</li>
+                                <li class="pb-2 position-relative">doloremque laudantium totam aperiam. Eaque ipsa quae
+                                    ab illo inventore
+                                </li>
+                                <li class="pb-2 position-relative">veritatis et quasi architecto beatae vitae dicta
+                                    sunt. Ut enim ad
+                                    minima</li>
+                            </ul>
+                            <p class="my-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Illum
+                                quisquam
+                                suscipit unde ad
+                                ratione sequi, saepe culpa nesciunt doloremque vitae?</p>
+                        </div>
+                    </div>
+                    <div class="event d-flex flex-column flex-xl-row gap-4 gap-xl-0">
+                        <div class="img w-lg-50">
+                            <img src="img/event-custom.jpg" alt="Custom" class="img-fluid">
+                        </div>
+                        <div class="data w-lg-50 ps-4 text-white">
+                            <div class="event-head">
+                                <h3 class="event-type fs-2">Custom Parties</h3>
+                                <span class="price position-relative text-white fs-5 fw-bold">$90</span>
+                            </div>
+                            <p class="mt-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Illum
+                                quisquam
+                                suscipit unde ad
+                                ratione sequi, saepe culpa nesciunt doloremque vitae?</p>
+                            <ul class="features style-none my-4">
+                                <li class="pb-2 position-relative">Sed ut perspiciatis unde omnis iste natus error sit
+                                    voluptatem
+                                    accusantium</li>
+                                <li class="pb-2 position-relative">doloremque laudantium totam aperiam. Eaque ipsa quae
+                                    ab illo inventore
+                                </li>
+                                <li class="pb-2 position-relative">veritatis et quasi architecto beatae vitae dicta
+                                    sunt. Ut enim ad
+                                    minima</li>
+                            </ul>
+                            <p class="my-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Illum
+                                quisquam
+                                suscipit unde ad
+                                ratione sequi, saepe culpa nesciunt doloremque vitae?</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="bullets w-50 mx-auto text-center">
+                <span role="button" class="rounded-circle d-inline-block active"></span>
+                <span role="button" class="rounded-circle d-inline-block mx-1"></span>
+                <span role="button" class="rounded-circle d-inline-block"></span>
+            </div>
+        </div>
+    </section>
+    <!-- end events -->
+    <!-- start Reservation -->
+    <section class="reser py-5" id="booking">
+        <div class="container py-3">
+            <div class="main-head">
+                <span class="small fs-6 text-white-50 position-relative text-uppercase">Reservation</span>
+                <h1 class="big text-capitalize my-2 fs-3 fw-bold">Book a Table</h1>
+            </div>
+            <form action="#" method="#" class="d-flex flex-wrap justify-content-between gap-3 py-4 text-white">
+                <input type=" text" name="#" id="name" placeholder="Your Name"
+                    class="flag d-inline-block py-2 px-3 text-white">
+                <input type="email" name="#" id="mail" placeholder="Your Email"
+                    class="flag d-inline-block py-2 px-3 text-white">
+                <input type="tel" name="#" id="phone" placeholder="Your Phone"
+                    class="flag d-inline-block py-2 px-3 text-white">
+                <input type="text" name="#" id="date" placeholder="Date"
+                    class="flag d-inline-block py-2 px-3 text-white">
+                <input type="text" name="#" id="time" placeholder="Time"
+                    class="flag d-inline-block py-2 px-3 text-white">
+                <input type="number" name="#" id="number" placeholder="# Of People"
+                    class="flag d-inline-block py-2 px-3 text-white">
+                <textarea name="message" id="message" placeholder="Any Notes"
+                    class="w-100 py-2 px-3 text-white"></textarea>
+                <button type="submit"
+                    class=" main-btn text-uppercase rounded-pill py-2 px-2 px-lg-4 text-white mx-auto"><span
+                        class="position-relative buttonValue">Book a table</span></button>
+            </form>
+        </div>
+    </section>
+    <!-- end Reservation -->
+    <!-- start testimonials -->
+    <section class="testi py-5" id="feedback">
+        <div class="container py-3">
+            <div class="main-head">
+                <span class="small fs-6 text-white-50 position-relative text-uppercase">testimonials</span>
+                <h1 class="big text-capitalize my-2 fs-3 fw-bold">What they're say about us</h1>
+            </div>
+            <div class="main-holder py-5 overflow-hidden position-relative" id="main-holder-testi">
+                <div class="slider d-flex" id="slider">
+                    <div class="slide-item p-4 pb-5 me-4 rounded-2 position-relative">
+                        <i class="fa-solid fa-quote-left fs-4 me-1"></i>
+                        <p class="position-relative text-white lh-lg d-inline pb-3"> Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing
+                            elit. Nam
+                            corrupti id, qui adipisci, ea delectus molestias veniam tempora alias inventore
+                            perspiciatis
+                            debitis quisquam asperiores optio.</p>
+                        <i class="fa-solid fa-quote-right fs-4 ms-1"></i>
+                        <div class="client position-absolute d-flex flex-column text-center">
+                            <div class="img">
+                                <img src="img/testimonials/testimonials-1.jpg" alt="Feedback"
+                                    class="img-fluid w-50 rounded-circle">
+                            </div>
+                            <h4 class="client-name text-white fs-6 my-1">Saul Goodman</h4>
+                            <h4 class="client-job text-white-50 fs-6">CEO & Founder</h4>
+                        </div>
+                    </div>
+                    <div class="slide-item p-4 pb-5 me-4 rounded-2 position-relative">
+                        <i class="fa-solid fa-quote-left fs-4 ms-1"></i>
+                        <p class="position-relative text-white lh-lg d-inline"> Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing
+                            elit. Nam
+                            corrupti id, qui adipisci, ea delectus molestias veniam tempora alias inventore
+                            perspiciatis
+                            debitis quisquam asperiores optio.</p>
+                        <i class="fa-solid fa-quote-right fs-4 me-1"></i>
+                        <div class="client position-absolute d-flex flex-column text-center">
+                            <div class="img">
+                                <img src="img/testimonials/testimonials-2.jpg" alt="Feedback"
+                                    class="img-fluid w-50 rounded-circle">
+                            </div>
+                            <h4 class="client-name text-white fs-6 my-1">Sara Willson</h4>
+                            <h4 class="client-job text-white-50 fs-6">Designer</h4>
+                        </div>
+                    </div>
+                    <div class="slide-item p-4 pb-5 me-4 rounded-2 position-relative">
+                        <i class="fa-solid fa-quote-left fs-4 ms-1"></i>
+                        <p class="position-relative text-white lh-lg d-inline"> Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing
+                            elit. Nam
+                            corrupti id, qui adipisci, ea delectus molestias veniam tempora alias inventore
+                            perspiciatis
+                            debitis quisquam asperiores optio.</p>
+                        <i class="fa-solid fa-quote-right fs-4 me-1"></i>
+                        <div class="client position-absolute d-flex flex-column text-center">
+                            <div class="img">
+                                <img src="img/testimonials/testimonials-3.jpg" alt="Feedback"
+                                    class="img-fluid w-50 rounded-circle">
+                            </div>
+                            <h4 class="client-name text-white fs-6 my-1">Matt Brandon</h4>
+                            <h4 class="client-job text-white-50 fs-6">Freelancer</h4>
+                        </div>
+                    </div>
+                    <div class="slide-item p-4 pb-5 me-4 rounded-2 position-relative">
+                        <i class="fa-solid fa-quote-left fs-4 ms-1"></i>
+                        <p class="position-relative text-white lh-lg d-inline"> Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing
+                            elit. Nam
+                            corrupti id, qui adipisci, ea delectus molestias veniam tempora alias inventore
+                            perspiciatis
+                            debitis quisquam asperiores optio.</p>
+                        <i class="fa-solid fa-quote-right fs-4 me-1"></i>
+                        <div class="client position-absolute d-flex flex-column text-center">
+                            <div class="img">
+                                <img src="img/testimonials/testimonials-4.jpg" alt="Feedback"
+                                    class="img-fluid w-50 rounded-circle">
+                            </div>
+                            <h4 class="client-name text-white fs-6 my-1">John Lareson</h4>
+                            <h4 class="client-job text-white-50 fs-6">Store Owner</h4>
+                        </div>
+                    </div>
+                    <div class="slide-item p-4 pb-5 me-4 rounded-2 position-relative">
+                        <i class="fa-solid fa-quote-left fs-4 ms-1"></i>
+                        <p class="position-relative text-white lh-lg d-inline"> Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing
+                            elit. Nam
+                            corrupti id, qui adipisci, ea delectus molestias veniam tempora alias inventore
+                            perspiciatis
+                            debitis quisquam asperiores optio.</p>
+                        <i class="fa-solid fa-quote-right fs-4 me-1"></i>
+                        <div class="client position-absolute d-flex flex-column text-center">
+                            <div class="img">
+                                <img src="img/testimonials/testimonials-5.jpg" alt="Feedback"
+                                    class="img-fluid w-50 rounded-circle">
+                            </div>
+                            <h4 class="client-name text-white fs-6 my-1">Jack Weshlor</h4>
+                            <h4 class="client-job text-white-50 fs-6">Freelancer</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bullets w-50 mx-auto text-center">
+                <span role="button" class="rounded-circle d-inline-block me-1 active"></span>
+                <span role="button" class="rounded-circle d-inline-block me-1"></span>
+                <span role="button" class="rounded-circle d-inline-block me-1"></span>
+                <span role="button" class="rounded-circle d-inline-block me-1"></span>
+                <span role="button" class="rounded-circle d-inline-block me-1"></span>
+            </div>
+        </div>
+    </section>
+    <!-- end testimonials -->
+    <!-- start gallery -->
+    <section class="gallery py-5  px-3" id="gallery">
+        <div class="container-fluid py-4">
+            <div class="main-head">
+                <span class="small fs-6 text-white-50 position-relative text-uppercase">gallery</span>
+                <h1 class="big text-capitalize my-2 fs-3 fw-bold">Some photos from Our Restaurant</h1>
+            </div>
+            <div class="gallery-holder row py-5" id="gallery">
+                <div role="button" class="image col-lg-3 col-md-4 border border-2 border-dark p-0 overflow-hidden"
+                    data-index="0">
+                    <img src="img/gallery/gallery-1.jpg" alt="img" class="img-fluid">
+                </div>
+                <div role="button" class="image col-lg-3 col-md-4 border border-2 border-dark p-0 overflow-hidden"
+                    data-index="1">
+                    <img src="img/gallery/gallery-2.jpg" alt="img" class="img-fluid">
+                </div>
+                <div role="button" class="image col-lg-3 col-md-4 border border-2 border-dark p-0 overflow-hidden"
+                    data-index="2">
+                    <img src="img/gallery/gallery-3.jpg" alt="img" class="img-fluid">
+                </div>
+                <div role="button" class="image col-lg-3 col-md-4 border border-2 border-dark p-0 overflow-hidden"
+                    data-index="3">
+                    <img src="img/gallery/gallery-4.jpg" alt="img" class="img-fluid">
+                </div>
+                <div role="button" class="image col-lg-3 col-md-4 border border-2 border-dark p-0 overflow-hidden"
+                    data-index="4">
+                    <img src="img/gallery/gallery-5.jpg" alt="img" class="img-fluid">
+                </div>
+                <div role="button" class="image col-lg-3 col-md-4 border border-2 border-dark p-0 overflow-hidden"
+                    data-index="5">
+                    <img src="img/gallery/gallery-6.jpg" alt="img" class="img-fluid">
+                </div>
+                <div role="button" class="image col-lg-3 col-md-4 border border-2 border-dark p-0 overflow-hidden"
+                    data-index="6">
+                    <img src="img/gallery/gallery-7.jpg" alt="img" class="img-fluid">
+                </div>
+                <div role="button" class="image col-lg-3 col-md-4 border border-2 border-dark p-0 overflow-hidden"
+                    data-index="7">
+                    <img src="img/gallery/gallery-8.jpg" alt="img" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end gallery -->
+    <!-- start chefs -->
+    <section class="chefs py-5" id="team">
+        <div class="container py-1">
+            <div class="main-head">
+                <span class="small fs-6 text-white-50 position-relative text-uppercase">chefs</span>
+                <h1 class="big text-capitalize my-2 fs-3 fw-bold">Our Proffesional Chefs</h1>
+            </div>
+            <div class="crew-holder row py-5 gy-4">
+                <div class="chef col-lg-4 col-md-6 position-relative overflow-hidden">
+                    <img src="img/chefs/chefs-1.jpg" alt="Chef" class="img-fluid">
+                    <div class="info text-white text-center">
+                        <h3 class="name fs-5 mb-0">Walter White</h3>
+                        <span class="position">Master Chef</span>
+                    </div>
+                    <div class="social-data">
+                        <a href="#"> <i class="fa-brands fa-twitter me-4 text-white"></i></a>
+                        <a href="#"> <i class="fa-brands fa-facebook-f me-4 text-white"></i></a>
+                        <a href="#"> <i class="fa-brands fa-instagram me-4 text-white"></i></a>
+                        <a href="#"> <i class="fa-brands fa-linkedin text-white"></i></a>
+                    </div>
+                </div>
+                <div class="chef col-lg-4 col-md-6 position-relative overflow-hidden">
+                    <img src="img/chefs/chefs-2.jpg" alt="Chef" class="img-fluid">
+                    <div class="info text-white text-center">
+                        <h3 class="name fs-5 mb-0">Sarah Jhonson</h3>
+                        <span class="position">Patissier</span>
+                    </div>
+                    <div class="social-data ">
+                        <a href="#"> <i class="fa-brands fa-twitter me-4 text-white"></i></a>
+                        <a href="#"> <i class="fa-brands fa-facebook-f me-4 text-white"></i></a>
+                        <a href="#"> <i class="fa-brands fa-instagram me-4 text-white"></i></a>
+                        <a href="#"> <i class="fa-brands fa-linkedin text-white"></i></a>
+                    </div>
+                </div>
+                <div class="chef col-lg-4 col-md-6 position-relative overflow-hidden">
+                    <img src="img/chefs/chefs-3.jpg" alt="Chef" class="img-fluid">
+                    <div class="info text-white text-center ">
+                        <h3 class="name fs-5 mb-0">William Anderson</h3>
+                        <span class="position">Chef</span>
+                    </div>
+                    <div class="social-data">
+                        <a href="#"> <i class="fa-brands fa-twitter me-4 text-white"></i></a>
+                        <a href="#"> <i class="fa-brands fa-facebook-f me-4 text-white"></i></a>
+                        <a href="#"> <i class="fa-brands fa-instagram me-4 text-white"></i></a>
+                        <a href="#"> <i class="fa-brands fa-linkedin text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end chefs -->
+    <!-- start contact us -->
+    <section class="contact-us py-5" id="contact">
+        <div class="container py-3">
+            <div class="main-head">
+                <span class="small fs-6 text-white-50 position-relative text-uppercase">Contact</span>
+                <h1 class="big text-capitalize my-2 fs-3 fw-bold">contact us</h1>
+            </div>
+            <div class="row py-5 gy-5 gy-lg-0">
+                <div class="data col-lg-4 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class=" icon flex-shrink-0">
+                            <i class="fa-solid fa-location-dot text-white"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3 text-white">
+                            <h5 class="text-white text-capitalize mb-1">Location:</h4>
+                                <span class="text-white-50">A108 Adam Street, New York, NY 535022</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class=" icon flex-shrink-0">
+                            <i class="fa-solid fa-clock text-white"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3 text-white">
+                            <h5 class="text-white text-capitalize mb-1">Open Hours:</h5>
+                            <span class="text-white-50">Monday-Saturday:
+                                11:00 AM - 23:00 PM</span>
+                        </div>
+
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class=" icon flex-shrink-0">
+                            <i class="fa-solid fa-envelope text-white"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3 text-white">
+                            <h5 class="text-white text-capitalize mb-1">E-mail:</h5>
+                            <span><a href="mailto:info@gmail.com"
+                                    class="text-decoration-none text-white-50">info@gmail.com</a></span>
+                        </div>
+
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class=" icon flex-shrink-0">
+                            <i class="fa-solid fa-phone-flip text-white"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3 text-white">
+                            <h5 class="text-white text-capitalize mb-1">call:</h5>
+                            <span><a href="tel:+1 5589 55488 55" class="text-decoration-none text-white-50">+1 5589
+                                    55488 55</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form col-lg-8">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control bg-transparent text-white" id="user-name"
+                                placeholder="Your Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control bg-transparent text-white" id="user-mail"
+                                placeholder="Your Mail">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control bg-transparent text-white" id="subject"
+                                placeholder="Subject">
+                        </div>
+                        <div class="col-12">
+                            <textarea name="#" id="#" placeholder="Leave Message"
+                                class="bg-transparent w-100 p-2 text-white" aria-placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class=" main-btn text-uppercase rounded-pill py-1 px-2 px-lg-4 text-white"><span
+                                    class="position-relative buttonValue">send Message</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+    <!-- end contact us -->
+    <!-- start footer -->
+    <footer class="py-5">
+        <div class="container py-4">
+            <div class="row justify-content-between gy-5">
+                <div class="col-lg-3 col-md-6 text-white text-center text-md-start">
+                    <h4 class="fw-normal fs-2 mb-3">Restaurantly</h4>
+                    <address>A108 Adam Street<br>NY 535022, USA</address>
+                    <span class="d-block mb-1">Phone: +1 5589 55488 55</span>
+                    <span class="d-block mb-1">Email: info@example.com</span>
+                    <div class="social-data d-flex mt-4 justify-content-center justify-content-lg-start">
+                        <div
+                            class="icon position-relative d-flex justify-content-center align-items-center rounded-circle me-2">
+                            <a href="#"> <i class="fa-brands fa-twitter text-white p-3"></i></a>
+                        </div>
+                        <div
+                            class="icon  position-relative d-flex justify-content-center align-items-center rounded-circle me-2">
+                            <a href="#"> <i class="fa-brands fa-facebook-f text-white p-3"></i></a>
+                        </div>
+                        <div
+                            class="icon  position-relative d-flex justify-content-center align-items-center rounded-circle me-2">
+                            <a href="#"> <i class="fa-brands fa-instagram text-white p-3"></i></a>
+                        </div>
+                        <div
+                            class="icon  position-relative d-flex justify-content-center align-items-center rounded-circle me-2">
+                            <a href="#"> <i class="fa-brands fa-linkedin text-white p-3"></i></a>
+                        </div>
+                        <div
+                            class="icon  position-relative d-flex justify-content-center align-items-center rounded-circle me-2">
+                            <a href="#"> <i class="fa-brands fa-skype text-white p-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 ps-4 p-md-0 links text-start">
+                    <h4 class="text-white fs-5 fw-normal mb-3">Useful Links</h4>
+                    <ul class="style-none p-0">
+                        <li class="position-relative mb-2 ms-3"><a href="#"
+                                class="text-decoration-none text-white">Home</a> </li>
+                        <li class="position-relative mb-2 ms-3"> <a href="#"
+                                class="text-decoration-none text-white">About us</a></li>
+                        <li class="position-relative mb-2 ms-3"> <a href="#"
+                                class="text-decoration-none text-white">Services</a></li>
+                        <li class="position-relative mb-2 ms-3"> <a href="#"
+                                class="text-decoration-none text-white">Terms of Services</a></li>
+                        <li class="position-relative mb-2 ms-3"> <a href="#"
+                                class="text-decoration-none text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 pe-4 p-md-0 links two text-end text-md-start">
+                    <h4 class="text-white fs-5 fw-normal mb-3">Our Services</h4>
+                    <ul class="style-none text-white p-0">
+                        <li class="position-relative mb-2 ms-3"><a href="#" class="text-decoration-none text-white">Web
+                                Design</a> </li>
+                        <li class="position-relative mb-2 ms-3"><a href="#" class="text-decoration-none text-white">Web
+                                Development</a> </li>
+                        <li class="position-relative mb-2 ms-3"><a href="#"
+                                class="text-decoration-none text-white">Product Management</a> </li>
+                        <li class="position-relative mb-2 ms-3"><a href="#"
+                                class="text-decoration-none text-white">Marketing</a> </li>
+                        <li class="position-relative mb-2 ms-3"><a href="#"
+                                class="text-decoration-none text-white">Graphic Design</a> </li>
+                    </ul>
+                </div>
+                <div class="sbscribe col-lg-4 col-md-6 text-white text-center text-md-start">
+                    <h5>Our Newsletter</h5>
+                    <p class="my-3">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <form action="#" method="#" class="position-relative">
+                        <input type="email" name="user-mail" id="#" class="py-2 px-2 rounded-pill border-0 w-100">
+                        <button
+                            class="mt-3 mt-md-0 main-btn text-uppercase rounded-pill py-2 px-2 px-lg-4 text-white"><span
+                                class="position-relative buttonValue">subscribe</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- start madeByme -->
+    <section class="madeBy py-5 text-center">
+        <p class="text-white">&copy; Copyright <span class="fw-bold"> Restaurantly.</span> All Rights Reserved</p>
+        <span class="designer-name text-white">Designed By <span class="name">Ahmed-Fahiim</span></span>
+    </section>
+    <!-- end madeByme -->
+    <!-- link JS files -->
+    <script src=" js/main.js"></script>
+   <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
