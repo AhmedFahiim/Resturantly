@@ -933,6 +933,9 @@ footer .links ul li::before {
   font-weight: bold;
   font-size: 12px;
 }
+footer input {
+  color: #fff;
+}
 /* change the direction of angle in mobile media */
 @media (max-width: 767px) {
   footer .links.two ul li {
