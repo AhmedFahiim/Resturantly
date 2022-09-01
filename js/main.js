@@ -1,5 +1,41 @@
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
+// ------------ change links active class on click -------------------
+
+let links = document.querySelectorAll(".nav-link");
+
+links.forEach((ele) => {
+  ele.onclick = (e) => {
+    links.forEach((r) => {
+      r.classList.remove("active");
+    });
+    e.currentTarget.classList.add("active");
+  };
+});
+
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// ------------ show popup -------------------
+
+let popup = document.getElementById("Video-popup");
+let closepop = document.getElementById("close-pop");
+let displayPop = document.getElementById("play-video");
+let video = document.getElementById("iframe");
+function showAndHidePop() {
+  if (this === displayPop) {
+    popup.classList.add("display");
+    video.src = "https://www.youtube.com/embed/xPPLbEFbCAo";
+  } else {
+    popup.classList.remove("display");
+    video.src = "";
+  }
+}
+
+displayPop.onclick = showAndHidePop;
+closepop.onclick = showAndHidePop;
+
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
 // ------------ scroll-Event in landing Section -------------------
 
 let button = document.getElementById("scroll");
