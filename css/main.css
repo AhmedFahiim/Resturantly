@@ -676,8 +676,7 @@ nav .nested-li:hover .nested {
 /* end specials */
 /* start events */
 .events {
-  background: url(../img/events-bg.jpg) fixed no-repeat;
-  background-size: cover;
+  background-color: var(--pri-bg);
 }
 .events .container {
   z-index: 1;
@@ -1027,5 +1026,6 @@ footer .sbscribe button {
 .madeBy .designer-name .name {
   color: var(--main-color);
   font-weight: 500;
+  text-decoration: none;
 }
 /* end made by me */

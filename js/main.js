@@ -155,7 +155,6 @@ specialLi.forEach((li, index) => {
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
 // ----------------- start Events-types Section --------------------
-
 let mainSlider = document.getElementById("main-holder"),
   slider = mainSlider.querySelector("#slider"),
   slideItem = slider.querySelectorAll(".event");
@@ -206,6 +205,12 @@ slider.addEventListener("transitionend", () => {
     slider.style.transform = `translateX(${-slideWidth * counter}px)`;
   }
 });
+
+window.addEventListener("resize", () => {
+  counter = 0;
+  slideWidth = slideItem[0].clientWidth;
+});
+
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
 // ----------------- start testimonials Section --------------------
