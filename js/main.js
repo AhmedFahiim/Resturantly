@@ -268,6 +268,12 @@ testiSlider.addEventListener("transitionend", () => {
     testiSlider.style.transform = `translateX(${-itemWidth * counterTesti}px)`;
   }
 });
+
+window.addEventListener("resize", () => {
+  counterTesti = 0;
+  itemWidth = testiSlideItems[0].clientWidth + 24;
+});
+
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
 // ----------------- start gallery Section --------------------
